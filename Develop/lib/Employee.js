@@ -3,7 +3,6 @@ class Employee {
   constructor(name, id, email) {
         this.name = name;
         this.id = id;
-        //Employee.lastId++;
         this.email = email;
     }
 
@@ -21,7 +20,6 @@ class Employee {
     }
 }
  
-//Employee.lastId = 0;
 
  module.exports = Employee;
 
