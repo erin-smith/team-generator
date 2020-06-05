@@ -1,8 +1,29 @@
 // TODO: Write code to define and export the Employee class
-const Employee = new Employee(name, id, email)
- getName()
- getId()
- getEmail()
-getRole() 
- return Employee 
+class Employee {
+  constructor(name, id, email) {
+        this.name = name;
+        this.id = id;
+        //Employee.lastId++;
+        this.email = email;
+    }
+
+    getName(){
+        return this.name;
+    }
+    getId(){
+        return this.id;
+    }
+    getEmail(){
+        return this.email;
+    }
+    getRole() {
+        return "Employee";
+    }
+}
+ 
+//Employee.lastId = 0;
+
+ module.exports = Employee;
+
+ 
 

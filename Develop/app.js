@@ -10,6 +10,36 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+const questions = [
+    {
+      message: "What is your full name?",
+      name: "name"
+    },
+    {
+      message: "What is you email address",
+      name: "email"
+    },
+    {
+      message: "What is your position/job title at the company?",
+      name: "role"
+    },
+    {
+        message: "If you are a Manager, what is your office Number?",
+        name: "officeNumber",
+        when: answers => {
+            
+        }
+      },
+    {
+      message: "If you are an Engineer, please type your Github Username:",
+      name: "GithubUser"
+    },
+    {
+      message: "If you are an Intern, What school do you attend?",
+      name: "school"
+    }
+];
+
 //ERIN 's plan:
 //1. get info from employees as data object like in readme: prompt user 
 //2. loop thourgh list of employees for each get info
