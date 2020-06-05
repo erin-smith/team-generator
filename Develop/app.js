@@ -81,17 +81,35 @@ function promptEmployeeInfo ()
     return answers;
 }
 
+async function buildTeam(){
+    let staffArray = [];
+    let id = 1;
+    const mgrInfo = await promptManager();
+    const manager = new Manager(mgrInfo.name, id++, mgrInfo.email, mgrInfo.officeNumber);
+    staffArray.push(manager);
+
+    while (true) {
+        const empInfo = await promptEmployeeInfo();
+        if (empInfo.role === "Engineer"){
+            const engineer = new Engineer (empInfo.name, id++, empInfo.email, empInfo.GithubUser);
+            staffArray.push(engineer);
+        }
+        if (empInfo.role === "Intern"){
+            const intern = new Intern (empInfo.name, id++, empInfo.email, empInfo.school);
+            staffArray.push(intern);
+        }
+        if (empInfo.addEmployee === false) {
+            break;
+        }
+    }
+    return staffArray;
+}
+
 async function main ()
 {
     try {
-        const mgrInfo = await promptManager();
-        let staffArray = [];
-        while (true) {
-            const empInfo = await promptEmployeeInfo();
-            if (empInfo.addEmployee === false) {
-                break;
-            }
-        }
+        const team = await buildTeam();
+        console.log(team);
 
     }
     catch (err) {
