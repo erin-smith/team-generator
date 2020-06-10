@@ -12,7 +12,7 @@
 
   The App was created with ES6 classes that passed all unit-testing.  The project utilizes the dependencies [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.  
 
-[Link to project](https://github.com/erin-smith/team-generator)
+[Link to Repo](https://github.com/erin-smith/team-generator)
 ![Screenshot](./Assets/team.png)  
 
 
@@ -43,7 +43,11 @@ Installation code:
 
   After installation, you can open the app.js file in the terminal and invoke with the following command: `$ node app.js` then follow the prompts.
 
-  You can also watch my video which is embedded here <>
+  You can also watch my video which is embedded here:
+  
+  [![Video Tutorial](http://img.youtube.com/vi/7Sd9W3IqUdE/0.jpg)](https://www.youtube.com/watch?v=px2xPOccoKU "Video Tutorial")
+
+
 
 ## License 
 [![ISClicense](https://img.shields.io/badge/license-ISC-blue.svg)](https://shields.io/)

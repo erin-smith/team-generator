@@ -36,13 +36,6 @@ async function main ()
 main();
 
 
-//ERIN 's plan:
-//1. get info from employees as data object like in readme: prompt user 
-//2. loop thourgh list of employees for each get info
-//3. display in cards in website
-
-
-
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
