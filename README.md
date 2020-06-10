@@ -43,7 +43,7 @@ Installation code:
 
   After installation, you can open the app.js file in the terminal and invoke with the following command: `$ node app.js` then follow the prompts.
 
-  You can also watch my video which is embedded here:
+  You can also watch my video which is linked here:
   
   [![Video Tutorial](http://img.youtube.com/vi/7Sd9W3IqUdE/0.jpg)](https://www.youtube.com/watch?v=px2xPOccoKU "Video Tutorial")
 
