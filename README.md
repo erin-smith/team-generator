@@ -8,11 +8,11 @@
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## Description
-  A Node CLI application that creates a formatted webpage of ID cards displaying info about each member of your Engineering Team.  The cards are generated after prompts from user input are answered and they define a clear employee roster with a summary of info.  This way a manager can have quick access to employee emails and git-hub profiles for quick contact.  
+  A Node CLI application that creates a formatted webpage of ID cards displaying info about each member of your Engineering Team.  The cards are generated after prompts from user input are answered. They define a clear employee roster with a summary of info.  This way a manager can have quick access to employee emails and git-hub profiles for immediate contact.  
 
   The App was created with ES6 classes that passed all unit-testing.  The project utilizes the dependencies [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.  
 
-[Link to project](https://erin-smith.github.io/team-generator/)
+[Link to project](https://github.com/erin-smith/team-generator)
 ![Screenshot](./Assets/team.png)  
 
 
@@ -30,7 +30,7 @@
 
 Installation code:  
 
-     To install necessary dependencies, run the following command:
+     To install, run the following command:
   `$ npm install`  
 
      To install necessary dependencies, run the following command(s):  
@@ -41,7 +41,7 @@ Installation code:
 ## Usage 
   This Node CLI app can be used to quickly generate a neatly formatted webpage of ID cards containing employee summaries of the personnel that outfit your software team. The app generates a HTML and CSS file that will be overwritten with each use for convenience.  
 
-  After installation, you can invoke the application in the terminal with the following command: `$ node app.js` and follow the prompts.
+  After installation, you can open the app.js file in the terminal and invoke with the following command: `$ node app.js` then follow the prompts.
 
   You can also watch my video which is embedded here <>
 
