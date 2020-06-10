@@ -7,21 +7,26 @@ const fs = require("fs");
 const helperFunctions = require("./lib/helperFunctions.js");
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputCSS = path.join(OUTPUT_DIR, "style.css");
 
 const render = require("./lib/htmlRenderer");
 
 async function main ()
 {
     try {
-       const team = await helperFunctions.buildTeam();
-       const genHTML = render(team);
+        const team = await helperFunctions.buildTeam();
+        const genHTML = render(team);
         fs.mkdir(OUTPUT_DIR, (err) => {
             //if (err) throw err;
-          });
-       fs.writeFile(outputPath, genHTML,(err) => {
-        if (err) throw err;
-        console.log('The file has been saved!');
-      }); 
+            });
+        fs.writeFile(outputPath, genHTML,(err) => {
+            if (err) throw err;
+            console.log('The file has been saved!');
+        }); 
+        fs.copyFile("./templates/style.css", outputCSS, (err) => {
+            if (err) throw err;
+            console.log('The file is re-written!');
+        }); 
        // console.log(genHTML);
     }
     catch (err) {

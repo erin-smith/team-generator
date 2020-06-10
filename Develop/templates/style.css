@@ -1,0 +1,22 @@
+h1, .team-area {
+    font-family: 'Special Elite', cursive;
+}
+.card-header {
+    background-color: darkslategray;
+    color: white;
+}
+.employee-card {
+    background-color: white;
+    margin: 20px;
+    word-wrap: normal;
+    width: 500px;
+    border: 1px solid;
+  }
+h1 {
+    font-family: 'Special Elite', cursive;
+    font-weight: 700; 
+    font-size: 72px;
+}
+.black {
+    background-color: black;
+}
